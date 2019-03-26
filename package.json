@@ -1,0 +1,30 @@
+{
+  "name": "library_management_system",
+  "version": "1.0.0",
+  "description": "Library Management System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swetasuman94/Library-Management-System.git"
+  },
+  "author": "Sweta Suman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swetasuman94/Library-Management-System/issues"
+  },
+  "homepage": "https://github.com/swetasuman94/Library-Management-System#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "jade": "^1.11.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
