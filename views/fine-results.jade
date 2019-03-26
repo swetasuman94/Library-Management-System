@@ -1,0 +1,16 @@
+-if ( items.length != 0 )
+                table(style="width:100%")
+                    tr
+                        th Borrower Card id
+                        th Fine ( in $ )
+                        -if( items[0].Paid == 0 )
+                            th Action
+                        - each item in items
+                            tr
+                                td #{item.Card_id}
+                                td #{item.Fine}
+                                -if( item.Paid == 0 )
+                                    td 
+                                        button(class="submit payfn" data-cardid = "#{item.Card_id}") Pay Fine
+            - else
+                 h5 Fine data does not exist for this category.

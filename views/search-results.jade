@@ -1,0 +1,21 @@
+h2 Book Search results
+div
+    -if ( items.length != 0 )
+        - each item in items
+            div(class="book-container" data-total="#{item.total}")
+                div
+                    img(class="book-thumbnail" src= "#{item.Cover}" )
+                ul
+                    li
+                        b #{item.title}
+                    li ISBN #{item.Isbn}
+                    li Written By: #{item.Authors}
+                    li Publishers: #{item.Publisher} 
+                    li #{item.Pages} Pages
+                    - if ( item.Loanable == null ) 
+                        li(class='green') Available For Loan
+                            button(id="checkoutModalToggle" data-isbn="#{item.Isbn}")  Checkout
+                    -else 
+                        li(class='red') Not Available
+    -else
+        div 0 Books Found

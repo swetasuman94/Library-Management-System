@@ -1,0 +1,32 @@
+html
+    head
+        meta(http-equiv='content-type',content='text/html;charset=iso-8859-9')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="icon" href="/images/favicon.png")
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', lang='text/javascript')
+        script(src='/js/main.js', lang='text/javascript')
+        link(rel='stylesheet', href='/css/main.css')
+        title Library Management System
+    body
+        div(class="header-container") Sweta's Library
+        div(class="popup-container checkin")
+            div(class="popup")
+                h3 Book is successfully checked in.
+        div(class="content-container")
+            ul(class="menu")
+                li 
+                    a(href="/home") Search and Check out
+                li 
+                    a(href="/checkin") Check in
+                li 
+                    a(href="/addborrower") Add borrower
+                li 
+                    a(href="/fines") Fines
+        div(class='container container-small')
+            h3(style="margin-left: 5%") Check-in Books
+            form(class="navbar-search pull-right",id="checkinSearchForm", onSubmit="return false;")
+                i(class="icon-white icon-search")
+                span &nbsp;
+                input(type="text",id="searchText",class="search-query span4",placeholder="Search book you want to check in",style="background-color:#FFF")
+                button(id="search" class="submit") Search
+            div(class="container", id="checkin-panel-content")

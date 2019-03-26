@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.right {
+    float: right;
+}
+.header-container {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    padding: 45px 0;
+}
+
+.popup-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #76628896;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup {
+    width: 40%;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#bookCheckoutForm input {
+    border: 1px solid darkgrey;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container.container-small {
+    padding: 10px 100px 0;
+}
+
+input#searchText {
+    width: 75%;
+    margin-left: 5%;
+}
+
+button.submit {
+    margin-left: 20px;
+    padding: 10px 35px;
+    background-color: antiquewhite;
+}
+
+.content-container {
+    background-color: #bdb5dc;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.menu li {
+    cursor: pointer;
+}
+li {
+    padding: 10px 35px;
+    text-align: center;
+    display: inline-block;
+}
+
+div#panel-content h2{
+    text-align: center;
+}
+
+div#panel-content >div, div#checkin-panel-content >div {
+    padding: 10px 90px 10px 70px;
+}
+
+button#chkin, button#chkinPay {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.book-container {
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+    width: 100%;
+    clear: both;
+}
+
+.book-container >div {
+    display: inline-block;
+    width: 25%;
+}
+
+.book-container >ul {
+    display: inline-block;
+    width: 70%;
+}
+
+.book-container li {
+    width: 100%;
+    text-align: left;
+}
+
+.green {
+    color: green;
+    font-weight: 600;
+}
+
+.red {
+    color: red;
+    font-weight: 600;
+}
+
+.book-container li button {
+    float: right;
+    margin-right: 30px;
+    padding: 5px 50px;
+    margin-top: -15px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(2n) {
+    background-color: #dddddd;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+button.payfn {
+    width: 90%;
+}
+
+img.book-thumbnail {
+    height: 210px;
+    width: 177px;
+    background: antiquewhite;
+}
+
+form#addBorrowerForm {
+    padding: 0 150px;
+}
+
+form#addBorrowerForm >div {
+    margin-bottom: 20px;
+}
+
+form#addBorrowerForm input.search-query.span4 {
+    width: 100%;
+    margin-top: 5px;
+}
+
+form#addBorrowerForm button{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.pagination button {
+    padding: 4px 10px;
+    float: right;
+    display: none;
+    margin-right: 8%;
+}
+
+#prev-page {
+    float: left;
+    margin-left: 5%;
+}
+
+.loader{
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}

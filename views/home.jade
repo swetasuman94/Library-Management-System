@@ -1,0 +1,42 @@
+html
+    head
+        meta(http-equiv='content-type',content='text/html;charset=iso-8859-9')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="icon" href="/images/favicon.png")
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', lang='text/javascript')
+        script(src='/js/main.js', lang='text/javascript')
+        link(rel='stylesheet', href='/css/main.css')
+        //link(rel='stylesheet', href='/css/bootstrap2.css')
+        title Library Management System
+    body
+        div(class="header-container") Sweta's Library
+        div(class="popup-container checkout")
+            div(class="popup")
+                h3 Enter Card No. To Checkout This Book
+                form(class="navbar-search pull-right",id="bookCheckoutForm" onSubmit="return false;")
+                    i(class="icon-white icon-search")
+                    span &nbsp;
+                    input(type="text",name="cardNum",class="search-query span4",placeholder="Enter card number",style="background-color:#FFF", required)
+                    input(type="text",name="isbn",class="search-query span4 isbnCheckout",placeholder="Enter card number",style="background-color:#FFF", hidden)
+                    button(class="submit" id="checkoutSubmit") Submit 
+                    button(class="submit" id="cancel") Cancel
+        div(class="content-container")
+            ul(class="menu")
+                li 
+                    a(href="/home") Search and Check out
+                li 
+                    a(href="/checkin") Check in
+                li 
+                    a(href="/addborrower") Add borrower
+                li 
+                    a(href="/fines") Fines
+        div(class='container container-small')
+            form(class="navbar-search pull-right",id="bookSearchForm")
+                i(class="icon-white icon-search")
+                span &nbsp;
+                input(type="text",id="searchText",class="search-query span4",placeholder="Search An Item",style="background-color:#FFF")
+                button(class="submit" id="search") Search
+            div.pagination
+                button(id="prev-page") <- Prev 
+                button(id="next-page" data-offset = 0) Next ->
+            div(class="container", id="panel-content")

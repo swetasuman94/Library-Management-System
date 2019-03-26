@@ -1,0 +1,36 @@
+html
+    head
+        meta(http-equiv='content-type',content='text/html;charset=iso-8859-9')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="icon" href="/images/favicon.png")
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', lang='text/javascript')
+        script(src='/js/main.js', lang='text/javascript')
+        link(rel='stylesheet', href='/css/main.css')
+        title Library Management System
+    body
+        div(class="header-container") Sweta's Library
+        div(class="popup-container fines")
+            div(class="popup")
+                h3 Updated Fines in Database
+                
+        div(class="content-container")
+            ul(class="menu")
+                li 
+                    a(href="/home") Search and Check out
+                li 
+                    a(href="/checkin") Check in
+                li 
+                    a(href="/addborrower") Add borrower
+                li(class="fineMenuItem") 
+                    a(href="/fines") Fines
+        div(class='container container-small fines')
+            div
+                h2.inline-block Fines
+                button(class="submit right", id ="updateFine") Update Fine
+            div(id="myBtnContainer")
+                button(class="btn filterToggle" id="1") Paid
+                button(class="btn filterToggle active" id="0" ) Unpaid
+            div(class="table-container")
+            
+                
+

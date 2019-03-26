@@ -1,0 +1,55 @@
+html
+    head
+        meta(http-equiv='content-type',content='text/html;charset=iso-8859-9')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="icon" href="/images/favicon.png")
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', lang='text/javascript')
+        script(src='/js/main.js', lang='text/javascript')
+        link(rel='stylesheet', href='/css/main.css')
+        title Library Management System
+    body
+        div(class="header-container") Sweta's Library
+        div(class="popup-container error")
+            div(class="popup")
+                h3 
+                
+        div(class="content-container")
+            ul(class="menu")
+                li 
+                    a(href="/home") Search and Check out
+                li 
+                    a(href="/checkin") Check in
+                li 
+                    a(href="/addborrower") Add borrower
+                li 
+                    a(href="/fines") Fines
+        div(class='container container-small')
+            h2(style="text-align: center;") Enter Borrower Details
+            form(id="addBorrowerForm" onsubmit="return false;")
+                div
+                    label(for="fname")   First Name: 
+                    input(type="text",name="fname",class="search-query span4",placeholder="Enter First Name",style="background-color:#FFF", required, autofocus)
+                div
+                    label(for="lname")  Last name:
+                    input(type="text",name="lname",class="search-query span4",placeholder="Enter Last Name",style="background-color:#FFF", required)
+                div
+                    label(for="email")  Email:
+                    input(type="email",name="email",class="search-query span4",placeholder="Enter Email Id",style="background-color:#FFF", required)
+                div
+                    label(for="ssn")  SSN:
+                    input(type="text",name="ssn", pattern="[0-9]{11}", class="search-query span4",placeholder="Enter SSN",style="background-color:#FFF", title="Eleven digit SSN", required)
+                div
+                    label(for="address") Address: 
+                    input(type="text",name="address",class="search-query span4",placeholder="Enter Address",style="background-color:#FFF", required)
+                div
+                    label(for="city")  City:
+                    input(type="text",name="city",class="search-query span4",placeholder="Enter City Name",style="background-color:#FFF", required)
+                div
+                    label(for="state")  State:
+                    input(type="text",name="state",class="search-query span4",placeholder="Enter State Name",style="background-color:#FFF", required)
+                div
+                    label(for="phone")  Phone Number:
+                    input(type="text",name="phone",pattern="[0-9]{10}",class="search-query span4",placeholder="Enter Phone Number",style="background-color:#FFF", title="Ten digit Phone no.", required)
+                button(class="submit" id="addBtn") Submit
+                
+

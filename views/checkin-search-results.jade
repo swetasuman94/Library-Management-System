@@ -1,0 +1,26 @@
+div
+    -if ( items.length != 0 )
+        - each item in items
+            div(class="book-container")
+                div
+                    img(class="book-thumbnail" src= "#{item.Cover}" )
+                ul
+                    li
+                        b #{item.Title}
+                    li ISBN #{item.Isbn}
+                    li Borrowed By: #{item.First_name} #{item.Last_name}
+                    li Date out: #{new Date(item.Date_out).toString().slice(0,16)}
+                    - if ( item.Fine_amount != null ) 
+                        li(class="red") Fine: $#{item.Fine_amount}
+                    - else 
+                        li  No Fine
+                    li Due Date: #{new Date(item.Due_date).toString().slice(0,16)}
+                        - if ( item.Fine_amount != null ) 
+                            button(id="chkin" data-loanid="#{item.Loan_id}")  CheckIn Without Paying Fine
+                            button(id="chkinPay" data-loanid="#{item.Loan_id}")  Pay Fine And Checkin
+                        - else 
+                            button(id="chkin" data-loanid="#{item.Loan_id}")  CheckIn
+                            
+                    
+    -else
+        div 0 Books Found
